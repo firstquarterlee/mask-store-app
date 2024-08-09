@@ -1,3 +1,4 @@
+//클래스 생성
 class MaskStore {
   final String name;
   final String address;
