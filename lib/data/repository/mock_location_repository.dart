@@ -10,6 +10,6 @@ class MockLocationRepository implements LocationRepository {
 
   @override
   Future<Location> getLocation() async {
-    return const Location(latitude: 0, longitude: 0)
+    return const Location(latitude: 0, longitude: 0);
   }
 }
