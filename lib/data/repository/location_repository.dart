@@ -4,4 +4,11 @@ import 'package:mask_store_app/data/model/location.dart';
 abstract interface class LocationRepository {
   //위치 정보를 얻기위해 getLocation() 메서드를 선언
   Future<Location> getLocation();
+
+  double distanceBetween(
+    double startLat,
+    double startLng,
+    double endLNg,
+    double endLng,
+  );
 }
