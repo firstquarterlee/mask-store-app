@@ -12,9 +12,10 @@ class MainViewModel with ChangeNotifier {
   MainViewModel({
     required StoreRepository storeRepository,
     required LocationRepository locationRepository,
-  })
-      : _storeRepository = storeRepository,
-        _locationRepository = locationRepository;
+  })  : _storeRepository = storeRepository,
+        _locationRepository = locationRepository {
+    fetchStores();
+  }
 
   //상태
   List<MaskStore> _stores = [];
