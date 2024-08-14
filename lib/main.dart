@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mask_store_app/data/repository/mock_location_repository.dart';
 import 'package:mask_store_app/data/repository/mock_store_repository.dart';
+import 'package:mask_store_app/data/repository/store_repository_impl.dart';
 import 'package:mask_store_app/ui/main_screen.dart';
 import 'package:mask_store_app/ui/main_view_model.dart';
 import 'package:provider/provider.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       home: ChangeNotifierProvider<MainViewModel>(
         create: (BuildContext context) {
           return MainViewModel(
-            storeRepository: MockStoreRepository(),
+            storeRepository: StoreRepositoryImpl(),
             locationRepository: MockLocationRepository(),
           );
         },
